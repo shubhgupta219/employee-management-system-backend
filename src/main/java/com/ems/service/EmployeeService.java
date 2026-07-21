@@ -78,24 +78,4 @@ public class EmployeeService {
 		return empRepo.save(employee);
 	}
 
-	public List<Employee> getEmployeesByDepartment(String dept) {
-		
-		List<Employee> data = empRepo.findByDepartment(dept);
-		
-		
-//		List<Employee> sortedbyEmpName = data.stream()
-//				.sorted(Comparator.comparing(data::getEmployeeName))
-//				.collect(Collectors.toList());
-		
-		
-	    return data;
-	}
-
-	public List<Employee> getEmpByMobileNumber(String ofcPhone){
-		
-		return empRepo.findByMobileNumber(ofcPhone);
-		
-	}
-	
-	
 }

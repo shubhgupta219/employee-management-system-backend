@@ -61,17 +61,5 @@ public class EmployeeController {
 
 		return empsvc.updateEmployee(id, employee);
 	}
-	
-	@GetMapping("/employee/department/{department}")
-	public List<Employee> getEmployeesByDepartment(@PathVariable String department) {
-
-	    return empsvc.getEmployeesByDepartment(department);
-	}
-	@GetMapping("/employee/mobile/{mobno}")
-	public List<Employee> getEmployeesByMobNo(@PathVariable String phoneNumbers) {
-
-	    return empsvc.getEmpByMobileNumber(phoneNumbers);
-	}
-	
 
 }
